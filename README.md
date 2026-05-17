@@ -1,4 +1,4 @@
-🛎️ Hotel Booking System
+# 🛎️ Hotel Booking System
 
 Hotel Booking System is a modern web application built using React + Vite that allows users to browse hotel rooms, check availability, and complete booking reservations with a smooth and fast user experience.
 
@@ -6,7 +6,7 @@ The project focuses on clean UI, reusable components, and efficient state manage
 
 ---
 
-⚙️ Tech Stack (Frontend)
+### Tech Stack 
 
 - React 19
 - Vite
@@ -17,31 +17,34 @@ The project focuses on clean UI, reusable components, and efficient state manage
 
 ---
 
-📋 Prerequisites
+## 📋 Prerequisites
 
 - Node.js (v18+ recommended)
 - npm or yarn
 
 ---
 
-📦 Installation & Setup
+## 📦 Installation & Setup
 
-1. Clone the project
+### 1. Clone the project
+```bash
+git clone https://github.com/Doniamagdy/Hotel-Booking-System.git
+cd HMS
+```
 
-git clone <YOUR-GITHUB-REPO-LINK>
-cd <YOUR-PROJECT-FOLDER-NAME>
-
-2. Install dependencies
-
+### 2. Install dependencies
+```bash
 npm install
+```
 
-3. Start development server
-
+### 3. Start the development server
+```bash
 npm run dev
+```
 
 ---
 
-✨ Features
+## ✨ Features
 
 🏨 Browse available hotel rooms  
 📄 View detailed room information  
@@ -54,8 +57,8 @@ npm run dev
 
 ---
 
-🧠 Project Structure
-
+### 🧠 Project Structure
+```bash
 src
 │
 ├── assets
@@ -94,33 +97,7 @@ src
 │
 ├── App.jsx
 └── main.jsx
-
----
-
-🔐 Validation (Regex Used)
-
-Full Name:
-const nameRegex = /^[A-Za-z\u0600-\u06FF\s]{3,}$/;
-
-Phone Number:
-const phoneRegex = /^01[0125][0-9]{8}$/;
-
-Email:
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-National ID:
-const nationalIdRegex = /^[0-9]{14}$/;
-
----
-
-🧩 Core Logic
-
-- useReservation custom hook handles:
-  - Guest state
-  - Booking state
-  - Price calculation
-  - Form validation
-  - API calls
+```
 
 ---
 
@@ -140,32 +117,9 @@ dist
 
 ---
 
-📸 Screenshots
+## 🌐 Live Demo & Links
 
-Home Page:
-<INSERT-HOME-PAGE-IMAGE-LINK>
-
-Room Details:
-<INSERT-ROOM-DETAILS-IMAGE-LINK>
-
-Booking Page:
-<INSERT-BOOKING-PAGE-IMAGE-LINK>
-
-Booking Success:
-<INSERT-SUCCESS-PAGE-IMAGE-LINK>
+🔗 **Live Site:** [https://hotel-management-system-rho-red.vercel.app/](https://hotel-management-system-rho-red.vercel.app/)  
+💻 **Repository:** [https://github.com/Doniamagdy/Hotel-Booking-System](https://github.com/Doniamagdy/Hotel-Booking-System)
 
 ---
-
-🌐 Live Demo & Links
-
-Live Site:
-<YOUR-LIVE-DEMO-LINK>
-
-GitHub Repository:
-<YOUR-GITHUB-REPO-LINK>
-
----
-
-👩‍💻 Author
-
-Built by <YOUR-NAME>
