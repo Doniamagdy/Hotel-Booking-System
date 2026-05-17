@@ -101,21 +101,6 @@ src
 
 ---
 
-🚀 Deployment
-
-1. Push project to GitHub:
-   <YOUR-GITHUB-REPO-LINK>
-
-2. Deploy on Vercel:
-   <YOUR-VERCEL-LINK>
-
-Build command:
-npm run build
-
-Output folder:
-dist
-
----
 
 ## 🌐 Live Demo & Links
 
