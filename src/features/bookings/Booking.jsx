@@ -6,13 +6,12 @@ import useReservation from "../../hooks/useReservation";
 import { notify } from "../../utils/utils";
 
 function Booking() {
-  const {
-  
 
+  const {
     checkIn,
     checkOut,
     
-    roomDetails,// used
+    roomDetails,
     nightsCountInHotel,
     
     totalPrice,

@@ -33,6 +33,45 @@ function useReservation() {
 
   const nightsCountInHotel = calcDays(checkOut, checkIn);
 
+const nameRegex = /^[A-Za-z\u0600-\u06FF\s]{3,}$/;
+
+const phoneRegex = /^01[0125][0-9]{8}$/;
+
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+const nationalIdRegex = /^[0-9]{14}$/;
+
+
+const validateForm = () => {
+  if (!nameRegex.test(guestInfo.fullName)) {
+    alert("Invalid Name");
+    return false;
+  }
+
+  if (!phoneRegex.test(guestInfo.phone)) {
+    alert("Invalid Phone Number");
+    return false;
+  }
+
+  if (!emailRegex.test(guestInfo.email)) {
+    alert("Invalid Email");
+    return false;
+  }
+
+  if (!nationalIdRegex.test(guestInfo.nationalId)) {
+    alert("National ID must be 14 digits");
+    return false;
+  }
+
+  return true;
+};
+
+
+
+
+
+
+
   useEffect(() => {
     async function getRoomDetails() {
       // handle errors
@@ -70,6 +109,8 @@ function useReservation() {
   }, [nightsCountInHotel, roomDetails]);
 
   async function handleBookingSubmit() {
+      if (!validateForm()) return;
+
     try {
       const guestRes = await insertGuest({
         fullName: guestInfo.fullName,

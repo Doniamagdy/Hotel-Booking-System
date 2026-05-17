@@ -22,6 +22,9 @@ function RoomDetails() {
   const [checkOut, setCheckOut] = useState("");
   const [availableRoom, setAvailableRooms] = useState(null);
 
+  const today = new Date().toISOString().split('T')[0];
+
+
   useEffect(() => {
     async function getRoomDetails() {
       const data = await fetchSingleRoom(id);
@@ -137,7 +140,7 @@ function RoomDetails() {
           {/* Date Inputs */}
           <form onSubmit={handleSubmitAvailabilityInputs}>
             <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <Input type="date" onChange={(e) => setCheckIn(e.target.value)} />
+              <Input type="date" onChange={(e) => setCheckIn(e.target.value)}  min={today}/>
 
               <Input
                 type="date"
