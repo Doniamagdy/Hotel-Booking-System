@@ -58,7 +58,7 @@ const validateForm = () => {
     return false;
   }
 
-  if (!nationalIdRegex.test(guestInfo.nationalId)) {
+  if (!nationalIdRegex.test(guestInfo.guestNationalId)) {
     alert("National ID must be 14 digits");
     return false;
   }
